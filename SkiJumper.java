@@ -48,6 +48,7 @@ public class SkiJumper implements Comparable<SkiJumper> {
 
     @Override
     public int compareTo(SkiJumper other) {
+        // We want to put SkiJumpers with the least points first when sorting a list with Collections.
         if (this.getPoints() > other.getPoints()){
             return 1;
         }
